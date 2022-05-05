@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(8, 10, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-content{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgb(0 0 0 1);
+}
+
+.left-section{
+    position: relative;
+    background-color: #003147;
+    padding: 40px;
+}
+
+.right-section{
+    position: relative;
+    background-color: rgb(241, 241, 247);
+    padding: 40px;
+}
+.left-content{
+    padding: 1rem;
+}
+
+.left-section .Profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profile-image{
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+}
+
+.Profile h2{
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.4em;
+    padding: 0.8rem;
+    letter-spacing: 0.02px;
+}
+.Profile h2 span{
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+.contactinfo{
+    padding: 5px;
+}
+.title1{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .75rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.contactinfo ul{
+    position: relative;
+}
+.contactinfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 5px ;
+    cursor: pointer;
+}
+.contactinfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: aqua;
+}
+.contactinfo ul li span{
+    color: #fff;
+    font-weight: 200;
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills{
+    padding: 1rem 0.5rem;
+}
+.skills .title2{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .75rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.skills .box .skill-name{
+    text-transform: uppercase;
+    color: white;
+    font-size: .65rem;
+}
+
+.skills .box .percent{
+    position: relative;
+    border: 1px solid white;
+    height: 4px;
+    background: white;
+}
+
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(22, 65, 207);
+}
+
+.contactinfo .language{
+    padding: 20px;
+}
+
+.title3{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .75rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.language ul .text{
+    text-transform: uppercase;
+    color: white;
+    font-size: .75rem;
+    padding: 20px;
+}
+
+.language .percent{
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: black;
+    display: block;
+    margin: 5px;
+}
+
+.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: white;
+}
+
+
+.main-content .right-section .right-content{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.right-content .about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.right-title{
+    text-transform: uppercase;
+    color: #003147;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+p{
+    color: #333;
+}
+.right-content .education{
+    margin-bottom: 50px;
+}
+.right-content .education li{
+    margin-bottom: 15px;
+}
+
+.education h5{
+    color: #003147;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+.education h4:nth-child(2){
+    color: black;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.education h4{
+    color: black;
+    font-weight: 400;
+}
+
+.right-content .experience{
+    margin-bottom: 50px;
+}
+
+.experience h5{
+    color: #003147;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+.experience h4:nth-child(2){
+    color: black;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.experience h4{
+    color: black;
+    font-weight: 400;
+}
+
+.right-content .interest{
+    margin-bottom: 50px;
+}
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li{
+    list-style: none;
+    color: black;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.interest ul li .fa{
+    color: aqua;
+    font-size: 18px;
+    width: 20px;
+}
+
+
+@media screen and (min-width:0px) and (max-width:673px) {
+    .main-content{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/* Write CSS code below */
